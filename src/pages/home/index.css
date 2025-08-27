@@ -1,0 +1,24 @@
+/* Globais do site*/
+@import "../GlobalStyle/stylesGlobal.css";
+
+/* Partes */
+@import "partials/main.css";
+@import "partials/hero-section.css";
+@import "partials/destaque-section.css";
+@import "partials/quem-somos-section.css";
+@import "partials/nova-unidade-section.css";
+@import "partials/nossos-parceiros-section.css";
+@import "partials/formulario.css";
+@import "https://sepas.org.br/src/pages/home/partials/portal-transparencia.css";
+@import "https://sepas.org.br/src/pages/home/partials/doacoes.css";
+@import "https://sepas.org.br/src/pages/home/partials/contratos.css";
+
+/* Componentes */
+@import "../GlobalStyle/header.css";
+@import "../GlobalStyle/footer.css";
+
+
+html{
+    overflow-x: hidden !important;
+
+}

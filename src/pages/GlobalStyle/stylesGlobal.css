@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*a barra de rolagem inteira.*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+/*a parte da barra de rolagem que você segura para rolar.*/
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-paragrafo);
+    border-radius: 10px;
+    border: 2px solid var(--cor-fundo);
+
+}
+
+/*o trilho da barra de rolagem.*/
+::-webkit-scrollbar-track{
+    background-color: var(--cor-fundo);
+}
+
+/* Variaveis */
+:root{
+    --cor-h1: #EF3E23;
+    --cor-h2: #FE7A12;
+    --cor-paragrafo: #282828;
+    --cor-fundo: #FFFFFF;
+    --cor-fundo-claro: #EEEEEE;
+    --cor-fundo-escuro: #252C32;
+
+    --font-principal: "Montserrat", sans-serif;
+}

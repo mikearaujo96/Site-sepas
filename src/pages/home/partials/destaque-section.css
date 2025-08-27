@@ -1,0 +1,158 @@
+.destaque-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    font-family: var(--font-principal);
+    color: var(--cor-fundo-paragrafo);
+    
+    .container-destaque {
+        margin-top: -114px;
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        gap: 26px;
+        padding: 44px 31px;
+        border-radius: 15px;
+        background-color: var(--cor-fundo);
+        box-shadow: 2px 4px 2px #00000020;
+        z-index: 5;
+    
+    
+        .div-conteudo-destaque-1 {
+            width: 40%;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                height: 273px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+
+        .div-conteudo-destaque-1::after {
+            content: "NOVIDADES";
+            height: 46px;
+            width: 147px;
+            z-index: 3;
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+            font-weight: bold;
+            font-size: 12px;
+            background-color: var(--cor-fundo);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.286);
+        }
+    
+        .div-conteudo-destaque-2 {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        
+            .div-conteudo-destaque-2-pt2 {
+                padding: 50px 0;
+                border-bottom: 1px solid var(--cor-fundo-claro);
+            
+                h2 {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                h3 {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                
+                
+                
+            
+            }
+
+            .div-conteudo-destaque-2-pt3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 0;
+            
+                div>a {
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: var(--cor-h1);
+                }
+
+                .bt-eventos {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                
+                    div {
+                        position: relative;
+                    
+                    
+                        button {
+                            outline: none;
+                            border: none;
+                            padding: 0;
+                            margin: none;
+                            background: none;
+                            color: none;
+                            cursor: pointer;
+                        
+                        
+                            img {
+                                display: block;
+                            }
+
+                            #retornarEvento{
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .destaque-section{   
+        .container-destaque {
+            width: 90%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+           
+                
+
+            .div-conteudo-destaque-1 {
+                width: 100%;
+            }
+            .div-conteudo-destaque-2 {
+                width: 100%;
+            }
+        }
+    }
+}

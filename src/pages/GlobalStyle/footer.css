@@ -1,0 +1,128 @@
+.footer {
+    padding: 25px 0;
+    font-family: var(--font-principal);
+    background-color: var(--cor-fundo);
+
+    .container-footer {
+
+        .base-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            padding: 100px 0;
+
+
+            .conteudo-footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    text-align: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+                a:hover{
+                    color: var(--cor-h1);
+                }
+
+                p {
+                    font-size: 15px;
+                    color: var(--cor-paragrafo);
+                    border-top: 1px solid rgb(206, 206, 206);
+                    margin-top: 10px;
+                    padding-top: 10px;
+                    text-align: center;
+                }
+
+                h3 {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: var(--cor-h1);
+                }
+
+                a {
+                    font-size: 14px;
+                    color: var(--cor-paragrafo);
+                    padding: 10px 0;
+                }
+
+
+                .subconteudo {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+
+                    a {
+                        text-decoration: none;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .rodape {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            p {
+                font-size: 14px;
+                border-top: 1px solid rgb(206, 206, 206);
+                padding-top: 10px;
+                margin-top: 10px;
+                width: 80%;
+                text-align: center;
+                color: var(--cor-paragrafo);
+                 
+            }
+
+        }
+
+    }
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    .footer {
+        .container-footer {
+            .base-footer {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            
+                .conteudo-footer:nth-child(1){
+                    width: 100%;    
+                }
+            
+            }
+
+            .rodape {
+                p {
+                    font-size: 11px;
+                }
+            }
+        
+
+        }
+    }
+
+}
